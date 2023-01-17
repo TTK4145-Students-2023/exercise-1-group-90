@@ -12,15 +12,23 @@ var i = 0
 
 func incrementing() {
     //TODO: increment i 1000000 times
+    for j := 0; j < 1000000; j++ {
+        i++
+    }
 }
 
 func decrementing() {
     //TODO: decrement i 1000000 times
+    for j := 0; j < 1000000; j++ {
+        i--
+    }
 }
 
 func main() {
     // What does GOMAXPROCS do? What happens if you set it to 1?
-    runtime.GOMAXPROCS(2)    
+    runtime.GOMAXPROCS(2)
+    go incrementing()
+    go decrementing()    
 	
     // TODO: Spawn both functions as goroutines
 	
