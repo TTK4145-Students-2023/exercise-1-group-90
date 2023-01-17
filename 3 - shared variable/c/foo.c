@@ -26,6 +26,8 @@ int main(){
     // TODO:
     // wait for the two threads to be done before printing the final result
     // Hint: Use `pthread_join`    
+
+    //Git push test
     
     printf("The magic number is: %d\n", i);
     return 0;
