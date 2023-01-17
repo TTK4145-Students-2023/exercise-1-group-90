@@ -5,6 +5,7 @@
 #include <stdio.h>
 
 int i = 0;
+//use mutex as we want to lock the system when incrementing and decrementing
 pthread_mutex_t lock;
 
 // Note the return type: void*
